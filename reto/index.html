@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> </title>
+</head>
+<body>
+  <input id="uno" type="text">
+  <input id="dos" type="text">
+  <button id="suma">suma</button> 
+  <button id="resta">resta</button>
+
+  <script src="js/jquery-2.1.3.min.js"></script>
+  <script>
+    $(function(){
+        var suma = $("#suma");
+        suma.click(function() {
+          valor1 = parseInt($("#uno").val());
+          valor2 = parseInt($("#dos").val());
+          console.log(valor1+valor2);
+        });
+        var resta = $("#resta");
+        resta.click(function(){
+          valor1 = parseInt($("#uno").val())
+          valor2 = parseInt($("#dos").val())
+          console.log(valor1-valor2);
+        });
+      });
+  </script>  
+</body>
+</html>
